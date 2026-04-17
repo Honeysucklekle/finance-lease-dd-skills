@@ -1,0 +1,7 @@
+# 将真实敏感词写入 sensitive-terms.local.txt，本文件仅作格式示例。
+# sensitive-terms.local.txt 已被 .gitignore 忽略，不应提交。
+
+真实客户名称示例
+真实供应商名称示例
+真实银行名称示例
+真实项目名称示例

@@ -1,0 +1,47 @@
+# Real client files and outputs
+data/
+raw/
+outputs/
+reports/
+deliverables/
+confidential/
+*_ocr_*/
+_ocr_*/
+
+# Sensitive finance source files
+*审计报告*
+*科目余额表*
+*财务尽调*
+*尽调报告*
+*承租人*
+*担保人*
+*银行流水*
+*征信*
+*.pdf
+
+# Office temporary files
+~$*
+*.tmp
+
+# Allow intentional sanitized resources
+!templates/
+!templates/*.docx
+!templates/*.xlsx
+!examples/
+!examples/**/*.xlsx
+!examples/**/*.md
+
+# Local runtime
+.env
+.venv/
+__pycache__/
+.DS_Store
+Thumbs.db
+
+# Packages
+dist/
+*.zip
+
+# Local sensitive term overrides
+sensitive-terms.local.txt
+tests/sensitive-terms.local.txt

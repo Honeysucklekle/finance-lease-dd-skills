@@ -1,0 +1,17 @@
+name: validate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate skills
+        shell: pwsh
+        run: .\scripts\validate-skills.ps1
+      - name: Check sensitive filenames and terms
+        shell: pwsh
+        run: .\scripts\check-sensitive-terms.ps1
